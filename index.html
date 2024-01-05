@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicons/site.webmanifest" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@701,200,500,301,201,1,300,2,601,600,401,501,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>BiteWise</title>
+  </head>
+  <body class="app-container">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg header ms-5 me-5 mt-2">
+      <div class="container-fluid">
+        <a class="navbar-brand me-5" href="#">
+          <img src="./images/BiteWise Logo.svg" alt="BiteWise logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Features
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Kitchen</a></li>
+                <li><a class="dropdown-item" href="#">Eat Out</a></li>
+                <li><a class="dropdown-item" href="#">Discover</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown fw-normal">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Diets
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Keto</a></li>
+                <li><a class="dropdown-item" href="#">Gluten-free</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">View all</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#aboutUsModal"
+              >
+                About us
+              </a>
+
+              <!-- ABOUT US MODAL -->
+              <div
+                class="modal fade"
+                id="aboutUsModal"
+                tabindex="-1"
+                aria-labelledby="aboutUsModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title fw-bold" id="aboutUsModalLabel">
+                        Meet the team
+                      </h5>
+                    </div>
+                    <div class="modal-body mb-4">
+                      <div class="row mt-3 meals-options-wrapper">
+                        <div
+                          class="col d-flex justify-content-center meal-option"
+                        >
+                          <div class="flex-column text-center">
+                            <div class="meal-image mx-auto mb-3">
+                              <img
+                                src="./images/breakfast.png"
+                                alt="Image of Jenny"
+                              />
+                            </div>
+                            <p class="meal-name fw-bold mb-2">Jenny</p>
+                          </div>
+                        </div>
+                        <div
+                          class="col d-flex justify-content-center meal-option"
+                        >
+                          <div class="flex-column text-center">
+                            <div class="meal-image mx-auto mb-3">
+                              <img
+                                src="./images/breakfast.png"
+                                alt="Image of Emeka"
+                              />
+                            </div>
+                            <p class="meal-name fw-bold mb-2">Emeka</p>
+                          </div>
+                        </div>
+                        <div
+                          class="col d-flex justify-content-center meal-option"
+                        >
+                          <div class="flex-column text-center">
+                            <div class="meal-image mx-auto mb-3">
+                              <img
+                                src="./images/breakfast.png"
+                                alt="Image of Dinda"
+                              />
+                            </div>
+                            <p class="meal-name fw-bold mb-2">Dinda</p>
+                          </div>
+                        </div>
+                        <div
+                          class="col d-flex justify-content-center meal-option"
+                        >
+                          <div class="flex-column text-center">
+                            <div class="meal-image mx-auto mb-3">
+                              <img
+                                src="./images/breakfast.png"
+                                alt="Image of Ali"
+                              />
+                            </div>
+                            <p class="meal-name fw-bold mb-2">Ali</p>
+                          </div>
+                        </div>
+                        <div
+                          class="col d-flex justify-content-center meal-option"
+                        >
+                          <div class="flex-column text-center">
+                            <div class="meal-image mx-auto mb-3">
+                              <img
+                                src="./images/breakfast.png"
+                                alt="Image of Usama"
+                              />
+                            </div>
+                            <p class="meal-name fw-bold mb-2">Usama</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="d-flex">
+            <!-- <button type="button" class="btn login-button me-2 px-4 fw-bold">
+              Login
+            </button> -->
+            <button type="button" class="btn signup-button px-3 fw-semibold">
+              Get started
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="container mt-5 mb-5 landing-section">
+      <div class="row gy-4">
+        <div class="col-sm-8 d-flex justify-content-center flex-column-reverse">
+          <div class=" ">
+            <h1 class="landing-main-text">
+              <span class="landing-main-text_color"> Personalised meals </span>
+              <br />
+              for specific dietary requirements
+            </h1>
+
+            <p class="landing-main-subtext mt-4 mb-4">
+              BiteWise helps you, family and friends eat healthier and maintain
+              a preferred diet. Optimise meal plan for you, family and friends.
+            </p>
+
+            <div class="d-flex">
+              <button
+                type="button"
+                class="btn signup-button me-3 px-3 fw-semibold"
+                data-bs-toggle="modal"
+                data-bs-target="#chooseMealModal"
+              >
+                Choose meal
+              </button>
+              <button type="button" class="btn login-button px-3 fw-semibold">
+                Number of meals
+              </button>
+            </div>
+
+            <!-- CHOOSE MEAL MODAL -->
+            <div
+              class="modal fade"
+              id="chooseMealModal"
+              tabindex="-1"
+              aria-labelledby="chooseMealModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title fw-bold" id="chooseMealModalLabel">
+                      Choose meal
+                    </h5>
+                  </div>
+                  <div class="modal-body my-3">
+                    <div class="btn-group">
+                      <button
+                        class="btn choose-meal-dropdown btn-sm dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Today's meals
+                      </button>
+                      <ul class="dropdown-menu px-2">
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                              value="breakfast"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault1"
+                            >
+                              Breakfast
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                              value="lunch"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault1"
+                            >
+                              Lunch
+                            </label>
+                          </div>
+                        </li>
+                        <li>
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="flexRadioDefault"
+                              id="flexRadioDefault1"
+                              value="dinner"
+                            />
+                            <label
+                              class="form-check-label"
+                              for="flexRadioDefault1"
+                            >
+                              Dinner
+                            </label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="row mt-3 meals-options-wrapper">
+                      <div
+                        class="col d-flex justify-content-center meal-option"
+                      >
+                        <div class="flex-column text-center">
+                          <div class="meal-image mx-auto mb-3">
+                            <img
+                              src="./images/breakfast.png"
+                              alt="breakfast meal"
+                            />
+                          </div>
+
+                          <p class="meal-name fw-bold mb-2">
+                            Lentil & Tomato curry
+                          </p>
+                          <div
+                            class="meal-info d-flex justify-content-between align-items-center"
+                          >
+                            <span class="d-flex align-items-center">
+                              <img
+                                src="./images/backblaze.svg"
+                                alt="flame icon"
+                              />
+                              <span class="meal-calories">100k cal</span>
+                            </span>
+                            <span class="d-flex align-items-center">
+                              <img src="./images/clock.svg" alt="clock icon" />
+                              <span class="meal-duration">20 mins</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col d-flex justify-content-center meal-option"
+                      >
+                        <div class="flex-column text-center">
+                          <div class="meal-image mx-auto mb-3">
+                            <img src="./images/lunch.png" alt="lunch meal" />
+                          </div>
+
+                          <p class="meal-name fw-bold mb-2">
+                            Lentil & Tomato curry
+                          </p>
+                          <div
+                            class="meal-info d-flex justify-content-between align-items-center"
+                          >
+                            <span class="d-flex align-items-center">
+                              <img
+                                src="./images/backblaze.svg"
+                                alt="flame icon"
+                              />
+                              <span class="meal-calories">100k cal</span>
+                            </span>
+                            <span class="d-flex align-items-center">
+                              <img src="./images/clock.svg" alt="clock icon" />
+                              <span class="meal-duration">20 mins</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div
+                        class="col d-flex justify-content-center meal-option"
+                      >
+                        <div class="flex-column text-center">
+                          <div class="meal-image mx-auto mb-3">
+                            <img src="./images/dinner.png" alt="dinner meal" />
+                          </div>
+
+                          <p class="meal-name fw-bold mb-2">
+                            Lentil & Tomato curry
+                          </p>
+                          <div
+                            class="meal-info d-flex justify-content-between align-items-center"
+                          >
+                            <span class="d-flex align-items-center">
+                              <img
+                                src="./images/backblaze.svg"
+                                alt="flame icon"
+                              />
+                              <span class="meal-calories">100k cal</span>
+                            </span>
+                            <span class="d-flex align-items-center">
+                              <img src="./images/clock.svg" alt="clock icon" />
+                              <span class="meal-duration">20 mins</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="container-fluid btn choose-meal-btn w-full px-3 fw-bold"
+                      data-bs-dismiss="modal"
+                    >
+                      Choose meal
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 overflow-hidden">
+          <div
+            id="carouselExampleControls"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./images/Familly eating healthy 1.png"
+                  class="d-block"
+                  alt="a family eating healthy foods"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./images/Carousel picture 01.png"
+                  class="d-block"
+                  alt="picture of meals"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev visually-hidden"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-nex visually-hidden"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES SECTION -->
+    <section class="features_section mt-5 mb-5 pt-5 pb-5">
+      <div class="text-center mb-3">
+        <h3 class="section-head">Our features</h3>
+      </div>
+
+      <main class="container">
+        <div class="row gx-5 gy-5">
+          <div
+            class="col-lg-6 accordion-container d-flex flex-column align-items-end justify-content-center"
+          >
+            <!-- Accordion -->
+            <div class="mt-4 w-75 accordion">
+              <div class="feature-border px-4 py-3">
+                <div class="d-flex justify-content-between">
+                  <h4 class="feature-card">Kitchen</h4>
+                  <img src="./images/add-circle.svg" alt="" class="but1" />
+                  <img
+                    src="./images/minus-circle.svg"
+                    alt=""
+                    class="but2"
+                    style="display: none"
+                  />
+                </div>
+                <div class="test">
+                  <p class="feature-text">
+                    Plan meals for yourself, family and friends by inviting them
+                    to your kitchen via sharing an apple app clip. Users will
+                    accept invitation then get added to your kitchen member list
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion -->
+            <div class="mt-4 w-75 accordion">
+              <div class="feature-border px-4 py-3">
+                <div class="d-flex justify-content-between">
+                  <h4 class="feature-card">Discover</h4>
+                  <img src="./images/add-circle.svg" alt="" class="but1" />
+                  <img
+                    src="./images/minus-circle.svg"
+                    alt=""
+                    class="but2"
+                    style="display: none"
+                  />
+                </div>
+                <div class="test">
+                  <p class="feature-text">
+                    Lorem ipsum dolor sit amet consectetur. Euismod amet velit
+                    enim justo semper tellus scelerisque sapien. Suspendisse
+                    volutpat cursus lacus eget id tempor nulla mauris. Libero
+                    amet ultrices mi nisl vitae. Interdum posuere risus venena
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion -->
+            <div class="mt-4 w-75 accordion">
+              <div class="feature-border ps-3 px-4 py-3">
+                <div class="d-flex justify-content-between">
+                  <h4 class="feature-card">Eat Out</h4>
+                  <img src="./images/add-circle.svg" alt="" class="but1" />
+                  <img
+                    src="./images/minus-circle.svg"
+                    alt=""
+                    class="but2"
+                    style="display: none"
+                  />
+                </div>
+                <div class="test">
+                  <p class="feature-text">
+                    Lorem ipsum dolor sit amet consectetur. Euismod amet velit
+                    enim justo semper tellus scelerisque sapien. Suspendisse
+                    volutpat cursus lacus eget id tempor nulla mauris. Libero
+                    amet ultrices mi nisl vitae. Interdum posuere risus venena
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Accordion -->
+            <div class="mt-4 w-75 accordion">
+              <div class="feature-border px-4 py-3">
+                <div class="d-flex justify-content-between">
+                  <h4 class="feature-card">Personalize</h4>
+                  <img src="./images/add-circle.svg" alt="" class="but1" />
+                  <img
+                    src="./images/minus-circle.svg"
+                    alt=""
+                    class="but2"
+                    style="display: none"
+                  />
+                </div>
+                <div class="test">
+                  <p class="feature-text">
+                    Lorem ipsum dolor sit amet consectetur. Euismod amet velit
+                    enim justo semper tellus scelerisque sapien. Suspendisse
+                    volutpat cursus lacus eget id tempor nulla mauris. Libero
+                    amet ultrices mi nisl vitae. Interdum posuere risus venena
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHONE IMAGE -->
+          <div class="col-lg-6 d-flex justify-content-center">
+            <div class="flex-column justify-content-center ps-5">
+              <img src="./images/phone.png" alt="image of Bitewise app" />
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- IMPACT TO HEALTH SECTION -->
+    <!-- card section - small changes to big diets-->
+    <section class="mt-5 mb-5">
+      <div class="d-flex justify-content-center">
+        <div class="flex-column text-center">
+          <h3 class="section-head pb-3">
+            Small changes to diet, big impact to health
+          </h3>
+          <p class="card-text-width">
+            Lorem ipsum dolor sit amet consectetur. Euismod amet velit enim
+            justo <br />
+            semper tellus scelerisque sapi
+          </p>
+        </div>
+      </div>
+
+      <main class="container">
+        <div class="w-75 row row-cols-sm-2 row-cols-md-3 mt-5 mx-auto">
+          <div class="col d-flex justify-content-center fill-icon">
+            <div class="flex-column text-center">
+              <div class="icon-wrapper4 mx-auto"></div>
+              <!-- <img src="./images/low carb icon.svg" alt=""> -->
+              <h3 class="card-text">Low-carb</h3>
+              <p class="card-sub-text pb-5">
+                Lorem ipsum dolor <br />
+                sit consectetur
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="flex-column text-center fill-icon">
+              <div class="icon-wrapper5 mx-auto"></div>
+              <!-- <img src="./images/vegetarian icon.svg" alt=""> -->
+              <h3 class="card-text">Vegetarian</h3>
+              <p class="">
+                Lorem ipsum dolor <br />
+                sit consectetur
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="flex-column text-center fill-icon">
+              <div class="icon-wrapper6 mx-auto"></div>
+              <!-- <img src="./images/gluten free icon.svg" alt=""> -->
+              <h3 class="card-text">Gluten-free</h3>
+              <p class="card-sub-text">
+                Lorem ipsum dolor <br />sit consectetur
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="flex-column text-center fill-icon">
+              <div class="icon-wrapper3 mx-auto"></div>
+              <!-- <img src="./images/keto icon.svg" alt=""> -->
+              <h3 class="card-text">Keto diet</h3>
+              <p class="card-sub-text pb-5">
+                Lorem ipsum dolor <br />sit consectetur
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="flex-column text-center fill-icon">
+              <div class="icon-wrapper2 mx-auto"></div>
+              <!-- <img src="./images/pescaterian icon.svg" alt=""> -->
+              <h3 class="card-text">Pescatarian</h3>
+              <p class="card-sub-text">
+                Lorem ipsum dolor <br />
+                sit consectetur
+              </p>
+            </div>
+          </div>
+
+          <div class="col d-flex justify-content-center">
+            <div class="flex-column text-center fill-icon">
+              <div class="icon-wrapper1 mx-auto"></div>
+              <!-- <img src="./images/vegan icon.svg" alt=""> -->
+              <h3 class="card-text">Vegan diet</h3>
+              <p class="card-sub-text">
+                Lorem ipsum dolor <br />
+                sit consectetur
+              </p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- MOTIVATIONS SECTION -->
+    <section class="first_bitewise mt-5 pt-5 mb-5">
+      <main class="container pb-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div>
+              <h3 class="bitewise-header">
+                Motivation. <br />
+                Achievements. <br />
+                <span class="bitewise-header-1">Awards. </span>
+              </h3>
+              <p class="bitewise-text">
+                Lorem ipsum dolor sit amet consectetur. Euismod amet velit enim
+                justo semper tellus scelerisque sapi
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              class="achievement"
+              src="./images/achievements.svg"
+              alt="achievements of BiteWise"
+            />
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- TASTE NICE SECTION -->
+    <section class="mt-5 btts-section">
+      <main class="container">
+        <div class="row">
+          <div
+            class="col-md-6 mt-5 d-flex justify-content-center btts-section-image"
+          >
+            <img
+              src="./images/discover bitewise 1.png"
+              alt=""
+              class="bitewise"
+            />
+          </div>
+          <div class="col-md-6 mt-5 d-flex justify-content-center">
+            <div class="d-flex justify-content-center flex-column">
+              <div class="">
+                <h3 class="bitewise-header">
+                  Bite Wise, <br />
+                  Taste Nice
+                </h3>
+                <p class="bitewise-text">
+                  Lorem ipsum dolor sit amet consectetur. Euismod amet velit
+                  enim justo semper tellus scelerisque sapi
+                </p>
+
+                <div class="mobile-app-info d-flex align-items-center gap-3">
+                  <div class="d-flex items-center gap-2">
+                    <a
+                      href="https://www.figma.com/file/3oMX027gyU0SjAqfY3maHt/BiteWise-HCD%2FVID-GRP6?type=design&node-id=1176%3A41101&mode=design&t=Tn2rn2ECUB2mrpkH-1"
+                      target="_blank"
+                      ><span class="fw-bold get-app-text">
+                        Get the app
+                      </span></a
+                    >
+                    <span class="arrow-right-icon"
+                      ><a
+                        href="https://www.figma.com/file/3oMX027gyU0SjAqfY3maHt/BiteWise-HCD%2FVID-GRP6?type=design&node-id=1176%3A41101&mode=design&t=Tn2rn2ECUB2mrpkH-1"
+                        target="_blank"
+                        ><img
+                          src="./images/arrow-right.svg"
+                          alt="Arrow right icon" /></a
+                    ></span>
+                  </div>
+                  <div class="d-flex items-center gap-2">
+                    <a
+                      href="https://www.figma.com/file/3oMX027gyU0SjAqfY3maHt/BiteWise-HCD%2FVID-GRP6?type=design&node-id=1176%3A41101&mode=design&t=Tn2rn2ECUB2mrpkH-1"
+                      target="_blank"
+                      ><img
+                        src="./images/apple-app-store.svg"
+                        alt="Apple store logo"
+                    /></a>
+                    <a
+                      href="https://www.figma.com/file/3oMX027gyU0SjAqfY3maHt/BiteWise-HCD%2FVID-GRP6?type=design&node-id=1176%3A41101&mode=design&t=Tn2rn2ECUB2mrpkH-1"
+                      target="_blank"
+                      ><img
+                        src="./images/google-play-icon.svg"
+                        alt="Google Play store logo"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+
+    <!-- FOOTER SECTION -->
+
+    <footer class="footer flex-column justify-content-center pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 py-4">
+            <span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="55"
+                viewBox="0 0 80 55"
+                fill="none"
+              >
+                <g clip-path="url(#clip0_76_2956)">
+                  <path
+                    d="M39.5727 25.6798C39.5727 28.0164 37.3638 30.8982 37.3638 35.1022C37.3638 41.1383 39.2572 43.0465 39.2572 45.8115C39.2572 48.2259 38.1527 50.212 34.7605 50.212C31.1317 50.212 29.7511 48.6933 29.7511 46.3177C29.7511 42.8908 31.9995 41.6446 31.9995 37.3998C31.9995 29.8857 29.6328 28.99 29.6328 25.9914C29.6328 25.4962 29.676 25.04 29.7737 24.6247C30.0066 21.6205 31.9995 20.2834 31.9995 16.2871C31.9995 8.77116 29.6328 7.87547 29.6328 4.87686C29.6328 2.26768 30.8556 0.709961 34.6422 0.709961C38.4288 0.709961 39.5727 2.07297 39.5727 4.56532C39.5727 6.90189 37.3638 9.78367 37.3638 13.9895C37.3638 19.2431 38.7989 21.3683 39.1708 23.6548C39.4544 24.2111 39.5727 24.888 39.5727 25.6798Z"
+                    fill="#FFFCF2"
+                  />
+                  <path
+                    d="M54.5987 18.7797C53.7328 18.7797 52.7054 20.1037 51.6029 20.1037C50.6957 20.1037 49.749 19.2859 49.749 17.1441C49.749 10.7185 56.1765 11.5363 56.1765 9.1218C56.1765 8.22611 55.6637 7.99245 54.9556 7.99245C54.2475 7.99245 53.4962 8.18717 52.9045 8.18717C50.2317 8.18717 52.8463 2.38467 49.8579 2.03789C49.8392 2.03603 49.8185 2.03418 49.7978 2.03418C48.4755 2.04902 47.7749 3.01517 47.4612 3.94239C45.0552 10.4069 40.3613 7.91457 40.3613 10.0175C40.3613 12.1204 43.1224 10.6016 43.1224 12.5488C43.1224 14.6128 40.4797 18.7797 40.4797 22.2066C40.4797 24.5914 41.894 26.5089 45.8177 27.0671C45.8891 27.0764 45.9605 27.0652 46.0244 27.0337C47.1983 26.4514 48.6295 26.1195 50.2993 26.1195C51.1727 26.1195 52.0274 26.1807 52.8331 26.3068C52.9083 26.3179 52.9834 26.3068 53.051 26.2734C54.7509 25.387 55.8985 23.8033 55.8985 21.196C55.8985 20.2224 55.4646 18.7815 54.5969 18.7815L54.5987 18.7797Z"
+                    fill="#FFFCF2"
+                  />
+                  <path
+                    d="M76.2932 19.2079C75.4254 19.2079 74.9126 20.1426 73.9265 21.1161C73.4138 21.6224 71.0866 23.1801 69.0355 23.1801C68.0888 23.1801 66.6688 22.6739 66.6688 21.4666C66.6688 18.2733 76.9243 22.1287 76.9243 11.0299C76.9243 5.03269 74.0449 1.68359 68.3255 1.68359C60.0422 1.68359 56.8867 6.39569 56.8867 13.9896C56.8867 20.7898 59.3848 25.767 64.2552 27.3952C65.9983 26.2677 68.3105 25.6613 71.2838 25.6613C72.3563 25.6613 73.3274 25.78 74.2008 26.01C75.8781 24.7249 77.0426 22.7721 77.0426 20.0647C77.0426 19.5584 76.7665 19.2079 76.2932 19.2079ZM66.1955 16.404C66.1955 15.1189 67.5366 13.8727 69.9821 13.8727C71.0471 13.8727 72.3093 14.379 72.3093 15.6252C72.3093 17.2218 69.8638 17.6502 67.7338 17.6502C66.7477 17.6502 66.1955 17.0661 66.1955 16.404Z"
+                    fill="#FFFCF2"
+                  />
+                  <path
+                    d="M30.169 32.6526C30.7475 40.3021 26.1908 54.0416 19.2092 54.0416C16.3298 54.0416 16.0931 51.004 15.7775 48.1612C15.6987 47.3434 15.0281 44.6563 14.3181 44.6563C12.267 44.6563 11.8331 52.2112 7.13931 52.2112C1.73548 52.2131 -6.10352e-05 41.1922 -6.10352e-05 31.145C-6.10352e-05 27.2117 1.65659 22.6943 6.15321 22.6943C8.75651 22.6943 10.7682 24.6415 10.7682 27.3285C10.7682 31.5733 6.42932 32.2743 6.42932 37.3758C6.42932 40.647 7.57319 41.348 8.51985 41.348C13.4898 41.348 9.8215 32.8584 15.9748 32.8584C19.6036 32.8584 20.4319 34.533 20.4319 36.9085C20.4319 38.9336 19.8403 41.2701 19.8403 42.7889C19.8403 43.8014 20.0375 44.3856 20.9053 44.3856C22.9958 44.3856 23.6664 41.3091 23.6664 39.4788C23.6664 36.597 23.1066 33.7041 23.1066 31.1338C23.1066 29.0309 23.9725 27.1858 26.2171 27.0615C28.2682 26.9465 29.7952 27.7161 30.169 32.6526Z"
+                    fill="#FED06E"
+                  />
+                  <path
+                    d="M58.4837 31.5941C58.4837 32.5287 57.8921 33.2297 57.1032 33.2297C55.2887 33.2297 56.1171 30.3479 51.9755 30.3479C51.0288 30.3479 50.0032 30.971 50.0032 32.0224C50.0032 35.722 59.0359 34.8653 59.0359 43.1212C59.0359 50.6372 54.1843 53.3243 49.3721 53.3243C43.6528 53.3243 40.3789 50.2867 40.3789 46.3924C40.3789 45.0683 41.0889 43.3938 42.3511 43.3938C43.6133 43.3938 43.2583 45.6525 46.6111 45.6525C47.8338 45.6525 48.7805 44.8736 48.7805 43.5885C48.7805 39.3048 42.3117 41.4856 42.3117 33.6191C42.3117 29.8027 45.1911 26.6094 50.3582 26.6094C54.6576 26.6094 58.4837 28.0892 58.4837 31.5941Z"
+                    fill="#FED06E"
+                  />
+                  <path
+                    d="M79.8813 35.6178C79.8813 46.7165 69.6259 42.8612 69.6259 46.0545C69.6259 47.2617 71.0459 47.768 71.9925 47.768C74.0436 47.768 76.3708 46.2103 76.8836 45.704C77.8697 44.7305 78.3824 43.7958 79.2502 43.7958C79.7235 43.7958 79.9997 44.1463 79.9997 44.6526C79.9997 50.1825 75.148 52.558 70.967 52.558C63.6304 52.558 59.8438 46.9502 59.8438 38.5775C59.8438 30.9836 62.9993 26.2715 71.2825 26.2715C77.0019 26.2715 79.8813 29.6206 79.8813 35.6178ZM75.2664 40.2131C75.2664 38.9669 74.0042 38.4606 72.9392 38.4606C70.4936 38.4606 69.1525 39.7068 69.1525 40.9919C69.1525 41.654 69.7048 42.2381 70.6909 42.2381C72.8208 42.2381 75.2664 41.8097 75.2664 40.2131Z"
+                    fill="#FED06E"
+                  />
+                  <path
+                    d="M26.5581 17.0661C24.9803 15.5084 22.732 15.6252 22.732 14.5737C22.732 13.7559 24.507 13.7949 25.7298 12.5876C27.0314 11.3025 27.7414 9.35536 27.7414 7.40821C27.7414 4.6822 26.4003 1.68359 22.6926 1.68359C18.9848 1.68359 16.8154 3.82546 14.646 3.82546C11.7666 3.82546 11.096 2.73505 9.43938 2.73505C8.2955 2.73505 7.42773 3.55286 7.42773 4.60432C7.42773 5.53895 7.90106 6.39569 8.09828 6.70724C8.68994 7.71976 8.68994 9.82268 8.68994 13.6001C8.68994 17.6484 8.57912 20.265 8.43074 21.9525C8.41571 22.1268 8.51902 22.29 8.68431 22.3512C10.4292 22.9873 11.6295 24.621 11.6295 26.6961C11.6295 27.4156 11.5055 28.0313 11.2989 28.5858C11.173 28.9233 11.5393 29.2348 11.8605 29.0679C12.9762 28.4912 13.4984 27.6586 14.7643 27.6586C16.776 27.6586 18.551 29.9173 21.3909 29.9173C21.7177 29.9173 22.0333 29.8931 22.3376 29.8486C22.5029 29.8245 22.6381 29.704 22.6719 29.5427C23.0194 27.9182 24.1802 26.5626 25.9514 26.2585C25.9664 26.2566 25.9815 26.2529 25.9984 26.251C26.0378 26.2436 26.0772 26.2362 26.1167 26.2325C26.22 26.214 26.3289 26.2028 26.4398 26.1954C26.451 26.1954 26.4604 26.1954 26.4717 26.1936C26.5318 26.1917 26.5938 26.1899 26.6576 26.1899C26.7835 26.1899 26.9093 26.1936 27.0295 26.1991C27.2305 26.2047 27.2324 26.201 27.3319 26.162C27.4784 26.1045 27.4916 26.0656 27.5348 26.0044C27.5348 26.0007 27.5404 25.997 27.5423 25.9933C27.5517 25.9766 27.5611 25.9599 27.5686 25.9432C28.3068 24.5988 28.6881 23.1226 28.6881 21.895C28.6881 20.2594 28.0175 18.507 26.5581 17.0661ZM16.3421 23.1801C14.7643 23.1801 14.1332 21.7782 14.1332 20.4541C14.1332 18.6627 14.9615 16.7935 16.3026 16.7935C17.9987 16.7935 18.8665 19.2079 18.8665 20.2205C18.8665 22.2455 17.5254 23.1801 16.3421 23.1801ZM16.1054 13.8338C14.5277 13.8338 13.8966 12.1593 13.8966 10.8741C13.8966 8.5765 15.1982 7.52504 16.6182 7.52504C18.2748 7.52504 19.1032 8.8491 19.1032 10.251C19.1032 12.0814 17.9987 13.8338 16.1054 13.8338Z"
+                    fill="#FFFCF2"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_76_2956">
+                    <rect
+                      width="80"
+                      height="53.3333"
+                      fill="white"
+                      transform="translate(0 0.709961)"
+                    />
+                  </clipPath>
+                </defs>
+              </svg>
+            </span>
+
+            <p class="text-white pt-4">
+              Personalised meals for you, your family <br />
+              and your friends
+            </p>
+
+            <div>
+              <a href="https://www.facebook.com/" target="_blank"
+                ><img src="./images/fb.svg" alt=""
+              /></a>
+              <a href="https://twitter.com/home?lang=en" target="_blank"
+                ><img src="./images/twitter.svg" alt=""
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img src="./images/insta.svg" alt=""
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank"
+                ><img src="./images/youtub.svg" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="text-white col-lg-4 py-4">
+            <h3 class="footer-articles-header">Articles</h3>
+            <div class="d-flex align-items-start gap-2">
+              <span>
+                <img src="./images/down-chevron 4.svg" alt="" />
+              </span>
+              <div class="footer-news-texts">
+                <p>Eating healthy: The healthy flexible diet by Ali Ahmed</p>
+                <p class="footer-news-texts-date">8 Nov, 2023</p>
+              </div>
+            </div>
+
+            <div class="d-flex align-items-start gap-2">
+              <span>
+                <img src="./images/down-chevron 4.svg" alt="" />
+              </span>
+              <div class="footer-news-texts">
+                <p>How to eat healthy and save money in your youth</p>
+                <p class="footer-news-texts-date">15 Nov, 2023</p>
+              </div>
+            </div>
+          </div>
+          <div class="text-white col-lg-4 newsletter-form-wrapper py-4">
+            <p>Newsletters tailored to your health</p>
+            <div
+              class="newsletter-form d-flex align-items-center gap-2 justify-content-between p-2"
+            >
+              <input type="text" placeholder="Enter your email" />
+              <img src="./images/mail.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="text-white text-center position-relative footer-banner mb-0">
+        <p class="mb-0">&copy 2023 All rights reserved</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
